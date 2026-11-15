@@ -1,3 +1,8 @@
+// Forge entry (github-core-clone-01): the server lives in app.ts — git wire
+// protocol, REST v3, GraphQL v4, MCP. This file is the kit's env lifecycle
+// (bind an ephemeral port, register it, poll until done, exit); it stays
+// the starter's lifecycle, this note is the only addition.
+//
 // The entry <-> env lifecycle, as env/src/wire.ts settles it: bind an ephemeral port, tell the env the
 // port it bound, then poll until the env says the trial is over and exit 0. Keep this file as it is:
 // the suite scores the server app.ts builds, and the lifecycle is the harness's, not the contest's.
